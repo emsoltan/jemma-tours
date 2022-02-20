@@ -1,0 +1,38 @@
+.hero{
+  /* border: 3px solid red; */
+  /* max-width: 80%; */
+  /* margin: 2rem auto; */
+  /* padding: 5rem 8rem; */
+  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* flex-direction: column; */
+  position: relative;
+  /* justify-content:space-evenly; */
+}
+.image-test {
+  /* width: 30rem; */
+  /* display: inline; */
+}
+.compo-view {
+  width: 50%;
+}
+.slider {
+
+}
+.hero-section .hero-text {
+  color: red;
+}
+.header__text-box {
+  /* position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  /* text-align: center; */
+  max-width:50%;
+  border: 3px solid red;
+  grid-area: 
+  left
+  left;
+}
