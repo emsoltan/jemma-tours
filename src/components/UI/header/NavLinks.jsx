@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Ul = styled.ul`
@@ -8,13 +9,14 @@ const Ul = styled.ul`
   max-width: 65%;
   justify-content: space-between;
   letter-spacing: 2px;
+  text-align: center;
   align-items: center;
 
   li a,
   li a:active,
   li:visited {
     padding: 0.75rem 1.2rem;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     color: var(--grey-light-2);
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -25,7 +27,8 @@ const Ul = styled.ul`
   li:active {
     transform: translateY(-2px);
     transition: all 0.3s ease-in-out;
-    text-shadow: 0 0.7rem 1rem black;
+    box-shadow: 0.3rem 0.3rem 1.5rem var(--grey-dark);
+    /* text-shadow:  */
   }
   @media (max-width: 37.5em) {
     flex-flow: column nowrap;
@@ -39,7 +42,6 @@ const Ul = styled.ul`
     padding: 10rem 1rem;
     transition: transform 0.3s ease-in-out;
     justify-content: space-around;
-    text-align: center;
 
     li a,
     li a:link,
@@ -69,20 +71,19 @@ const NavLinks = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        {" "}
-        <a href="/about">About</a>
+        <Link to="/about">About</Link>
       </li>
       <li>
-        <a href="/tours">Tours</a>
+        <Link to="/tours">Tours</Link>
       </li>
       <li>
-        <a href="/contact">contact</a>
+        <Link to="/contact">contact</Link>
       </li>
       <li>
-        <a href="/register">Register</a>
+        <Link to="/register">Register</Link>
       </li>
     </Ul>
   );

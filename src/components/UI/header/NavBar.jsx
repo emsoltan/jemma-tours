@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NavMenu from "./NavMenu";
-import logo from "./../../../assets/wave-haikei (4) 7.svg";
+import logo from "./../../../assets/logo.svg";
 
 
 const Nav = styled.nav`

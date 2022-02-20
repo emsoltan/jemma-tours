@@ -161,7 +161,7 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  background-color: var(--grey-light-1);
+  background-color: var(--grey-light-2);
  
 }
  /* .carousel-indicators {
@@ -173,18 +173,12 @@ body {
   }
 }
 
-::-moz-selection {
-  background-color: #55c57a;
-  color: #fff;
+
+main {
+  position: relative;
 }
 
-::selection {
-  background-color: #55c57a;
-  color: #fff;
-}
 
-body {
-}
 
 .heading-primary {
   color: var(--grey-dark-3);
