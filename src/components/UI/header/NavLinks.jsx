@@ -67,23 +67,33 @@ const Ul = styled.ul`
   }
 `;
 
-const NavLinks = ({ open }) => {
+const NavLinks = ({ open, setOpen }) => {
   return (
     <Ul open={open}>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={() => setOpen(!open)}>
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" onClick={() => setOpen(!open)}>
+          About
+        </Link>
       </li>
       <li>
-        <Link to="/tours">Tours</Link>
+        <Link to="/tours" onClick={() => setOpen(!open)}>
+          Tours
+        </Link>
       </li>
       <li>
-        <Link to="/contact">contact</Link>
+        <Link to="/contact" onClick={() => setOpen(!open)}>
+          contact
+        </Link>
       </li>
       <li>
-        <Link to="/register">Register</Link>
+        <Link to="/register" onClick={() => setOpen(!open)}>
+          Register
+        </Link>
       </li>
     </Ul>
   );
