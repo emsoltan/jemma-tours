@@ -728,8 +728,8 @@ body {
   transform: translate(-35%, -50%);
 }
 .cta__img--logo img {
-  width: 100%;
-  padding-left: 3rem;
+  width: 120%;
+  padding-left: 3.3rem;
 }
 .cta__img--1 {
   -webkit-transform: translate(-10%, -50%) scale(0.97);
