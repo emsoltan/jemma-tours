@@ -1,12 +1,12 @@
 .section-about {
   background-color: var(--grey-light-2);
   padding: 20rem 3rem;
-  margin: 15vh 0;
+  margin: 15rem 0;
   max-height: 100vh;
   position: relative;
   letter-spacing: 1px;
 }
-.about-title {
+.section-about-title {
   position: absolute;
   top: 0.5rem;
   right: 50%;
@@ -16,7 +16,7 @@
   border-radius: 0.5rem;
 }
 .about-secondary {
-  width: max-content;
+  max-width: 30rem;
   padding: 1rem 1.5rem;
   background-color: var(--grey-light-1);
   color: var(--black);
@@ -55,12 +55,20 @@
 
 @media only screen and (max-width: 56.25em) {
   .section-about {
-    padding: 8rem;
+    padding: 8rem 0;
     padding-bottom: 12rem;
   }
+.section-about-title {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
 
+}
   .about-secondary {
     margin: 0 auto;
+    max-width: 25rem;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  text-align: center;
   }
   .section-about a.btn-text {
     /* max-width: 35%; */
@@ -110,6 +118,7 @@
 @media only screen and (max-width: 56.25em) {
   .composition__photo--p1 {
     top: 0;
+    left: -3rem;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
@@ -138,7 +147,7 @@
 @media only screen and (max-width: 56.25em) {
   .composition__photo--p3 {
     top: 0;
-    left: 0;
+    left: -1rem;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }

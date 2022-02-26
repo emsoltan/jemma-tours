@@ -43,7 +43,7 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    max-width: 20rem;
+    max-width: 30vw;
     padding: 10rem 1rem;
     transition: transform 0.3s ease-in-out;
     justify-content: space-around;
@@ -66,7 +66,7 @@ const Ul = styled.ul`
       background: none;
       cursor: pointer;
       font-family: inherit;
-      padding: 1rem 2.5rem;
+      padding: .75rem 1.5rem;
     }
   }
 `;

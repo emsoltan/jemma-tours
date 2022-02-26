@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="section-about">
       <div className="u-center-text u-margin-bottom-big about-title">
-        <h2 className="heading-secondary">Get in touch with Nature</h2>
+        <h2 className="heading-secondary section-about-title">Get in touch with Nature</h2>
       </div>
 
       <div className="row">
@@ -21,7 +21,7 @@ const About = () => {
           </p>
 
           <h3 className="heading-tertiary u-margin-bottom-small about-secondary">
-            Make new memories alive
+            Make new memories
           </h3>
           <p className="paragraph">
         With our outdoor experience & adventures, you have the chance to live & re-live your wildest dreams. Get in touch with your inner self & have beautiful memories forever.

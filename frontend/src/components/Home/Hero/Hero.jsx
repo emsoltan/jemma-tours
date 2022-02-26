@@ -16,7 +16,7 @@ const Hero = () => {
           </span>
         </h4>
         <a href="#section-tours" className="btn btn--green btn--animated">
-          Discover Our Tours
+          Explore Tours
         </a>
       </div>
       {/* <Slider/> */}
