@@ -18,7 +18,8 @@ const Features = () => {
             </h3>
             <p className="feature-box__text">
               Get in touch with our beautiful nature, go somehwere where you can
-              hear your inner thoughts & care for the peace & beauty of the world.
+              hear your inner thoughts & care for the peace & beauty of the
+              world.
             </p>
           </div>
         </div>
@@ -54,9 +55,9 @@ const Features = () => {
               Live Healthy
             </h3>
             <p className="feature-box__text">
-              It is medically proven that our mental health level improves while
-              spending time in nature. As well as countless physical health
-              benefits. Mind, Body & Soul
+              Mind, Body & Soul. It is medically proven that our mental health
+              level improves while spending time in nature. As well as countless
+              physical health benefits.
             </p>
           </div>
         </div>
