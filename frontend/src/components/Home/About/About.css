@@ -5,8 +5,9 @@
   max-height: 100vh;
   position: relative;
   letter-spacing: 1px;
+ 
 }
-.section-about-title {
+.section-about-title  {
   position: absolute;
   top: 0.5rem;
   right: 50%;
@@ -43,7 +44,7 @@
   text-align: center;
   border-radius: 0.25rem;
   position: absolute;
-  top: 85%;
+  bottom: 5%;
   right: 50%;
   transform: translate(50%, -50%);
 }

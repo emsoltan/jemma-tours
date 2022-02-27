@@ -2,7 +2,6 @@ import React from "react";
 import "./Hero.css";
 import "../../UI/button/Button.css"
 import logo from "../../../Assets/logo-alt-3.svg"
-import Slider from "../../UI/Slider"
 
 const Hero = () => {
   return (
