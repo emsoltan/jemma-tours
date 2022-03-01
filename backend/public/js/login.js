@@ -15,7 +15,7 @@ export const login = async (email, password) => {
             console.log(result)
             showAlert("success", "Logged in successfully!")
             window.setTimeout(() => {
-                location.assign("/")
+                location.assign("/overview")
             }, 1500)
         }
     } catch (error) {
