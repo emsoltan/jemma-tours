@@ -29,8 +29,6 @@ block content
                     svg.heading-box__icon
                         use(xlink:href='/img/icons.svg#icon-map-pin')
                     span.heading-box__text= tour.startLocation.description
-    section.section-map
-        #map(data-locations=`${JSON.stringify(tour.locations)}`)
     section.section-description
         .overview-box
             div
@@ -56,6 +54,8 @@ block content
             - const paragraphs = tour.description.split('\n')
             each p in paragraphs
                 p.description__text= p
+    section.section-map
+        #map(data-locations=`${JSON.stringify(tour.locations)}`)
     section.section-pictures
         each img, i in tour.images
             .picture-box
