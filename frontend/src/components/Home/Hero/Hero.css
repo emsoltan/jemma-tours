@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+
 .hero {
   height: 85vh;
   background-image: -webkit-gradient(
@@ -19,6 +19,7 @@
   background-size: cover;
   background-position: top;
   position: relative;
+  margin-bottom: 7rem;
 }
 
 .hero .heading-primary {

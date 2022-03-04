@@ -1,7 +1,7 @@
 .section-about {
   background-color: var(--grey-light-2);
   padding: 20rem 3rem;
-  margin: 15rem 0;
+  margin-bottom: 15rem;
   max-height: 100vh;
   position: relative;
   letter-spacing: 1px;
