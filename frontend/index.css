@@ -747,6 +747,8 @@ Typography/Headers */
   position: absolute;
   bottom: -7rem;
 }
+
+
 @media only screen and (max-width: 37.5em) {
   .lp-hero {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -758,7 +760,7 @@ Typography/Headers */
   }
 }
 
-/* ===============================================*/
+/* ================================================*/
 /* ================= ABOUT SECTION STYLES ===========*/
 .lp-section-about {
   background-color: var(--grey-light-2);
