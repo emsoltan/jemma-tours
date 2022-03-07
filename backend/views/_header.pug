@@ -12,27 +12,49 @@
 //-         else
 //-             a.nav__el(href='/login') Log in 
 //-             a.nav__el.nav__el--cta(href='/signup') Signup
-
 header.header
-    nav.nav
-        a(href=('/'))    
-            img.nav-logo(src='/img/logo-final.svg' alt='logo')
-
+    .navbar
+        .navbar__logo
+            a(href='/')
+                img.nav-logo(src='/img/logo-final.svg' alt='logo')
         if user 
-            ul 
-                li
-                    a(href='/overview') Tours
-                li
-                    a.nav__el--logout Logout
-                li
+            ul.navbar__list
+                li.navbar__list--item
+                    a(href='/overview')  Tours 
+                li.navbar__list--item
+                    a.nav__el--logout Logout 
+                li.navbar__list--item
                     a(href='/overview/me') 
                         img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
                         span= user.name.split(" ")[0]
         else 
-            ul 
-                li
-                    a(href='/overview') Tours
-                li
-                    a(href='/overview/login') Login
-                li
-                    a(href='/overview/signup') signup
+            ul.navbar__list
+                li.navbar__list--item
+                    a(href='/overview')  Tours 
+                li.navbar__list--item
+                    a(href='#')  contact
+                li.navbar__list--item
+                    a(href='/overview/login') login
+
+//- header.header
+//-     nav.nav
+//-         a(href=('/'))    
+//-             img.nav-logo(src='' alt='logo')
+
+//-         if user 
+//-             ul 
+//-                 li
+//-                     a(href='/overview') Tours
+//-                 li
+//-                     a.nav__el--logout Logout
+//-                 li
+//-                     a(href='/overview/me') 
+//-                         img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
+//-                         span= user.name.split(" ")[0]
+//-         else 
+//-             ul 
+//-                 li
+//-                     a(href='/overview') Tours
+//-                 li
+//-                     a(href='/overview/login') Login
+//-                 li
