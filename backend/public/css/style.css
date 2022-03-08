@@ -388,10 +388,10 @@ main {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 1rem 2.5rem;
+  padding: 1rem;
   display: inline-block;
   background-image: -webkit-gradient(
     linear,
@@ -417,13 +417,13 @@ main {
 
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .heading-secondary {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -1726,7 +1726,52 @@ Typography/Headers */
     to(#28b487)
   );
   background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
-  opacity: 0.85;
+  opacity: 0.6;
+}
+
+.header__hero-overlay-orange {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(var(--secondary-light)),
+    to(var(--secondary-dark))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    var(--secondary-light),
+    var(--secondary-dark)
+  );
+}
+
+.header__hero-overlay-blue {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(var(--tertiary-light)),
+    to(var(--tertiary-dark))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    var(--tertiary-light),
+    var(--tertiary-dark)
+  );
+}
+
+.header__hero-overlay-green {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(var(--primary-light)),
+    to(var(--primary))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary)
+  );
 }
 
 .heading-box {
@@ -2477,15 +2522,49 @@ Typography/Headers */
   position: absolute;
   width: 100%;
   height: 100%;
+  opacity: 0.7;
+}
+.card-container .card__picture-overlay-orange {
   background-image: -webkit-gradient(
     linear,
     left top,
     right bottom,
-    from(#7dd56f),
-    to(#28b487)
+    from(var(--secondary-light)),
+    to(var(--secondary-dark))
   );
-  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
-  opacity: 0.7;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--secondary-light),
+    var(--secondary-dark)
+  );
+}
+.card-container .card__picture-overlay-blue {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(var(--tertiary-light)),
+    to(var(--tertiary-dark))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    var(--tertiary-light),
+    var(--tertiary-dark)
+  );
+}
+.card-container .card__picture-overlay-green {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(var(--primary-light)),
+    to(var(--primary))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary)
+  );
 }
 .card-container .card__picture-img {
   -o-object-fit: cover;
