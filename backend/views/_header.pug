@@ -1,17 +1,3 @@
-//- header.header   
-//-     nav.nav.nav--tours 
-//-         a.nav__el(href='/') All tours
-//-     .header__logo 
-//-         img(src='/img/logo-green.svg' alt=' logo')
-//-     nav.nav.nav--user 
-//-         if user 
-//-             a.nav__el.nav__el--logout Logout
-//-             a.nav__el(href='/me')
-//-                 img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
-//-                 span= user.name.split(" ")[0]
-//-         else
-//-             a.nav__el(href='/login') Log in 
-//-             a.nav__el.nav__el--cta(href='/signup') Signup
 header.header
     .navbar
         .navbar__logo
@@ -35,26 +21,3 @@ header.header
                     a(href='#')  contact
                 li.navbar__list--item
                     a(href='/overview/login') login
-
-//- header.header
-//-     nav.nav
-//-         a(href=('/'))    
-//-             img.nav-logo(src='' alt='logo')
-
-//-         if user 
-//-             ul 
-//-                 li
-//-                     a(href='/overview') Tours
-//-                 li
-//-                     a.nav__el--logout Logout
-//-                 li
-//-                     a(href='/overview/me') 
-//-                         img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
-//-                         span= user.name.split(" ")[0]
-//-         else 
-//-             ul 
-//-                 li
-//-                     a(href='/overview') Tours
-//-                 li
-//-                     a(href='/overview/login') Login
-//-                 li

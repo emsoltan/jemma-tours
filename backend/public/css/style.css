@@ -74,7 +74,7 @@ body {
   font-family: "Lato", sans-serif;
   color: var(--black);
   background-color: var(--grey-light-1);
-  padding: 3rem;
+  /* padding: 3rem; */
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +196,7 @@ body {
 
 main {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   background-color: var(--grey-light-2);
 }
@@ -204,10 +204,6 @@ main {
   main {
     width: 100%;
   }
-}
-
-.main {
-  padding: 5rem 5rem;
 }
 
 /* ================= */
@@ -503,24 +499,17 @@ Typography/Headers */
   margin: 0 auto;
 }
 
-.heading-primary span,
+.heading-primary span {
+  padding: 1rem 1.5rem;
+  line-height: 1;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
 .heading-tertirary span {
   padding: 1rem 1.5rem;
   line-height: 1;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(rgba(125, 213, 111, 0.85)),
-    to(rgba(40, 180, 135, 0.85))
-  );
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(125, 213, 111, 0.85),
-    rgba(40, 180, 135, 0.85)
-  );
 }
 
 .heading-tertiary {
@@ -703,7 +692,7 @@ Typography/Headers */
   background-color: var(--grey-light-1);
 }
 .navbar {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   max-height: 7rem;
   display: grid;
@@ -1428,7 +1417,7 @@ Typography/Headers */
     linear,
     left top,
     right bottom,
-    from(rgb(121, 220, 187 85)),
+    from(rgb(121, 220, 187, 0.85)),
     to(rgba(40, 180, 133, 0.85))
   );
   background-image: linear-gradient(
@@ -2566,6 +2555,52 @@ Typography/Headers */
     var(--primary)
   );
 }
+
+.card__heading-span--orange {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(255, 185, 0, 0.85)),
+    to(rgba(255, 119, 48, 0.85))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(248, 168, 125, 0.85),
+    rgba(255, 119, 48, 0.85)
+  );
+}
+
+.card__heading-span--green {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgb(121, 220, 187 85)),
+    to(rgba(40, 180, 133, 0.85))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(121, 220, 187, 0.85),
+    rgba(40, 180, 133, 0.85)
+  );
+}
+
+.card__heading-span--blue {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(119, 191, 247, 0.85)),
+    to(rgba(86, 67, 250, 0.85))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(119, 191, 247, 0.85),
+    rgba(86, 67, 250, 0.85)
+  );
+}
+/* (edited)  */
 .card-container .card__picture-img {
   -o-object-fit: cover;
   object-fit: cover;
