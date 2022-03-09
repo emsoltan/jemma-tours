@@ -40,7 +40,7 @@ block content
                     +overviewBox('Participants', `${tour.maxGroupSize} people`, 'user' )
                     +overviewBox('Rating', `${tour.ratingsAverage} / 5`, 'star' )
                 .overview-box__group
-                    h2.heading-secondary.ma-bt-lg Your tour guides
+                    h2.heading-secondary.ma-bt-lg Your guides
                     each guide in tour.guides
                         .overview-box__detail
                             img.overview-box__img(src=`/img/users/${guide.photo}` alt=`${guide.name}`)
@@ -50,7 +50,7 @@ block content
                                 span.overview-box__label Tour guide
                             span.overview-box__text= guide.name
         .description-box
-            h2.heading-secondary.ma-bt-lg= `About ${tour.name} tour`
+            h2.heading-secondary.ma-bt-lg= `About the tour`
             - const paragraphs = tour.description.split('\n')
             each p in paragraphs
                 p.description__text= p
@@ -72,9 +72,9 @@ block content
             img.cta__img.cta__img--1(src=`/img/tours/${tour.images[1]}`, alt='tour image')
             img.cta__img.cta__img--2(src=`/img/tours/${tour.images[2]}`, alt='tour image')
             .cta__content
-                h2.heading-secondary What are you waiting for?
+                h2.heading-secondary Why wait?
                 p.cta__text= `${tour.duration} days. 1 adventure. Infinite memories. Make it yours today!`
                 if user 
                     button.btn.btn--green.span-all-rows#book-tour(data-tour-id=`${tour.id}`) Book tour now!
                 else 
-                    a.btn.btn--green.span-all-rows(href='/login') Book tour now!
+                    a.btn.btn--green.span-all-rows(href='/login') Book now!
