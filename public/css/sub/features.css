@@ -39,8 +39,8 @@
   gap: 3rem;
   width: 90%;
   margin: 0 auto;
-  /* border: 3px solid red; */
 }
+
 .lp-feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -88,7 +88,6 @@
     to(#28b485)
   );
   background-image: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text;
   color: var(--primary);
 }
 
