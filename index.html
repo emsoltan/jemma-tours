@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <section class="section-contact">
+      <div class="row">
+        <div class="contact">
+          <div class="contact__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">Contact us</h2>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="Name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Name</label>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="contact-form__input"
+                  placeholder="Email address"
+                  id="email"
+                  required
+                />
+                <label for="email" class="form__label">Email address</label>
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+
+                <textarea
+                  rows="10"
+                  cols="100"
+                  class="contact-form__textarea"
+                  placeholder="Message"
+                  id="message"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form__group">
+                <button class="btn btn--green">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
