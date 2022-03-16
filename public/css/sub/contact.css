@@ -1,12 +1,14 @@
 .section-contact {
-  padding: 5rem 0;
-  background-color: var(--grey-light-2);
+  margin:5rem auto;
+  padding: 0 5rem;
+  background-color: var(--grey-light-1);
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  width: 80%;
 }
 @media only screen and (max-width: 56.25em) {
   .section-contact {
-    padding: 10rem 0;
+    padding: 8rem 0;
   }
 }
 .contact {
@@ -15,13 +17,13 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
 .contact__form {
-  width: 80%;
-  padding: 6rem;
+  padding: 6rem 2rem;
   margin: 0 auto;
+  background-color: var(--grey-light-1);
 }
 @media only screen and (max-width: 75em) {
   .contact__form {
-    width: 65%;
+    width: 75%;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -36,10 +38,10 @@
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
-  background-color: var(--grey-light-1);
+  background-color: var(--grey-light-2);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 50%;
+  width: 100%;
   display: block;
   transition: all 0.3s;
 }

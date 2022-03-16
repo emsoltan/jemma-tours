@@ -40,7 +40,14 @@
 .footer__logo-box {
   text-align: center;
   margin: 0 auto;
-  width: 70%;
+  width: max-content;
+  border-radius: 50%;
+}
+.footer__logo-box:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(40, 38, 44, 0.2);
+  box-shadow: 0 1rem 2rem var(--bkg-shadow-white);
 }
 
 .footer__logo {
