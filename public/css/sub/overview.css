@@ -6,6 +6,14 @@
   grid-gap: 7rem;
 }
 
+.card-container:first-child {
+  margin-top: 5rem;
+}
+
+.card-container:last-child {
+  margin-bottom: 5rem;
+}
+
 @media only screen and (max-width: 75em) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
@@ -271,7 +279,7 @@
 }
 
 .login-form {
-  margin: 0 auto;
+  margin: 5rem auto;
   max-width: 55rem;
   background-color: #fff;
   -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);

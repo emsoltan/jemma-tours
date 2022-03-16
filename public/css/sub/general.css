@@ -336,25 +336,12 @@ main {
 }
 
 .heading-secondary {
+  color: var(--primary);
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 1rem;
+  padding: 1rem 0;
   display: inline-block;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#7bddbd),
-    to(#28b485)
-  );
-
-  background-image: linear-gradient(
-    to right,
-    var(--primary-light),
-    var(--primary)
-  );
-  color: transparent;
   letter-spacing: 0.2rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
