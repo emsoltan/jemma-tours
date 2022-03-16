@@ -1,10 +1,10 @@
 .section-contact {
-  margin:5rem auto;
-  padding: 0 5rem;
+  margin:10rem auto;
+  padding: 0 3rem;
   background-color: var(--grey-light-1);
-  border-radius: 3px;
+  border-radius: 3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  width: 80%;
+  width: 65%;
 }
 @media only screen and (max-width: 56.25em) {
   .section-contact {
@@ -17,7 +17,7 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
 .contact__form {
-  padding: 6rem 2rem;
+  padding: 3rem 1rem;
   margin: 0 auto;
   background-color: var(--grey-light-1);
 }

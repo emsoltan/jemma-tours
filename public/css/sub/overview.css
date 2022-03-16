@@ -279,17 +279,19 @@
   margin: 0 auto;
 }
 .section-login {
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
+
+  
 }
 .login-form {
   margin: 5rem auto;
-  max-width: 55rem;
+  width: 50%;
   background-color: #fff;
   -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
   box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
-  padding: 5rem 7rem;
+  padding: 2rem 3rem;
   border-radius: 5px;
 }
 
