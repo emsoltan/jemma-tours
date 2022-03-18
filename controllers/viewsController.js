@@ -10,9 +10,9 @@ exports.getHome = catchAsync(async (req, res) => {
     })
 })
 
-exports.getContact = catchAsync(async (req, res) => {
-    res.status(200).render("contact", {
-        title: "Contact"
+exports.getAbout = catchAsync(async (req, res) => {
+    res.status(200).render("about", {
+        title: "About us"
     })
 })
 

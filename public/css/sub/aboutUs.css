@@ -281,13 +281,13 @@
       from(rgba(123, 221, 189, 0.4)),
       to(rgba(85, 197, 122, 0.4))
     ),
-    url("/public/img/about-cta-bkg-2.jpg");
+    url("/img/about-cta-bkg-2.jpg");
   background-image: linear-gradient(
       to right bottom,
       rgba(123, 221, 189, 0.4),
       rgba(85, 197, 122, 0.4)
     ),
-    url("/public/img/about-cta-bkg-2.jpg");
+    url("/img/about-cta-bkg-2.jpg");
   background-size: cover;
   background-position: center;
   min-height: 40vh;
