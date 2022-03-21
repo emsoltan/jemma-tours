@@ -258,6 +258,17 @@
   backface-visibility: hidden;
 }
 
+.nav__el--logout {
+  background-color: var(--black);
+  color: var(--primary-light);
+  margin: 4rem auto;
+  display: block;
+  /* width: 40%; */
+  max-width: 15rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
 .side-nav svg {
   height: 1.9rem;
   width: 1.9rem;
