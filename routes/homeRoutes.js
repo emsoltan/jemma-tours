@@ -11,7 +11,7 @@ router
         authController.isLoggedIn,
         viewsController.getHome,
         viewsController.getOverview)
-router.get("/about", viewsController.getAbout)
+router.get("/about", authController.isLoggedIn, viewsController.getAbout)
 
 
 module.exports = router
