@@ -8920,8 +8920,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var login = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(email, password) {
-    var _result;
-
+    var result;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -8938,10 +8937,10 @@ var login = /*#__PURE__*/function () {
             });
 
           case 3:
-            _result = _context.sent;
+            result = _context.sent;
 
-            if (_result.data.status === "success") {
-              console.log(_result);
+            if (result.data.status === "success") {
+              console.log(result);
               (0, _alerts.showAlert)("success", "Logged in successfully!");
               window.setTimeout(function () {
                 location.assign("/overview");
@@ -8973,8 +8972,7 @@ exports.login = login;
 
 var logout = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-    var _result2;
-
+    var result;
     return regeneratorRuntime.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
@@ -8987,33 +8985,23 @@ var logout = /*#__PURE__*/function () {
             });
 
           case 3:
-            _result2 = _context2.sent;
-            console.log(_result2.data.status);
-
-            if (_result2.data.status === "success") {
-              console.log(_result2.data.status);
-              console.log("===================================");
-              window.setTimeout(function () {
-                location.assign("/overview");
-              }, 500);
-            }
-
-            _context2.next = 13;
+            result = _context2.sent;
+            if (result.data.status === "success") location.reload(true);
+            _context2.next = 11;
             break;
 
-          case 8:
-            _context2.prev = 8;
+          case 7:
+            _context2.prev = 7;
             _context2.t0 = _context2["catch"](0);
             console.log(_context2.t0.response);
-            console.log(result.data.status);
             (0, _alerts.showAlert)("error", "Error logging out! Try again.");
 
-          case 13:
+          case 11:
           case "end":
             return _context2.stop();
         }
       }
-    }, _callee2, null, [[0, 8]]);
+    }, _callee2, null, [[0, 7]]);
   }));
 
   return function logout() {
@@ -9545,7 +9533,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40613" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42907" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
