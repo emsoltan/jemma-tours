@@ -218,6 +218,10 @@
   transition: all 0.3s;
 }
 
+.side-nav li:hover svg {
+  fill: var(--primary-light);
+}
+
 .side-nav--active,
 .side-nav li:hover {
   border-left: 4px solid var(--black) !important;
@@ -251,23 +255,11 @@
 .side-nav a:hover,
 .side-nav a:active {
   -webkit-transform: translateX(3px);
-  transform: translateX(1px);
-  border: 1px solid var(--primary-dark);
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   backface-visibility: hidden;
-}
-
-.nav__el--logout {
   background-color: var(--black);
   color: var(--primary-light);
-  margin: 4rem auto;
-  display: block;
-  width: 100%;
-  /* max-width: 15rem; */
-  padding: 1rem 1.5rem;
-  text-align: center;
-  animation: none;
 }
 
 .side-nav svg {
