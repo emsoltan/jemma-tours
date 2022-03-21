@@ -263,10 +263,10 @@
   color: var(--primary-light);
   margin: 4rem auto;
   display: block;
-  /* width: 40%; */
   max-width: 15rem;
   padding: 1rem 1.5rem;
   text-align: center;
+  animation: none;
 }
 
 .side-nav svg {
