@@ -91,6 +91,7 @@
   display: inline-block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  margin: 0 0.25rem;
 }
 
 .footer__link:hover,
