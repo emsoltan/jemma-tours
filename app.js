@@ -7,6 +7,7 @@ const mongoSanitize = require("express-mongo-sanitize")
 const xss = require("xss-clean")
 const hpp = require("hpp")
 const cookieParser = require("cookie-parser")
+const compression = require("compression")
 const csp = require("express-csp")
 
 const AppError = require("./utils/appError")
@@ -126,10 +127,13 @@ app.use(hpp({
     whitelist: ["duration", "ratingsAverage", "ratingsQuantity", "maxGroupSize", "difficulty", "price"]
 }))
 
+// Compression request and response / not for images
+app.use(compression())
+
 // Test middleware
 
 app.use((req, res, next) => {
-    console.log("Hello from the middleware inside APP.JS")
+    //console.log("Hello from the middleware inside APP.JS")
     req.requestTime = new Date().toISOString()
     next()
 })
