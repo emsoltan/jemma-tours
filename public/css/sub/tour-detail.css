@@ -586,10 +586,12 @@
 
 @media screen and (max-width: 37.5em) {
   .cta {
-    height: 35vh;
+    height: 45vh;
   }
   .cta__img {
     top: 8rem;
+    height: 12rem;
+    width: 12rem;
   }
   .cta__content {
     position: absolute;

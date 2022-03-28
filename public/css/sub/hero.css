@@ -40,11 +40,13 @@
 
 .lp-hero .heading-primary {
   height: 80%;
+  width: 90% !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bkg-shadow-white);
+  padding: 0;
 }
 
 .lp-hero .heading-primary--sub {

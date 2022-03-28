@@ -294,6 +294,12 @@
   padding: 2rem 3rem;
   border-radius: 5px;
 }
+@media  (max-width: 56.25em){
+  .login-form {
+    width: 85%;
+    margin-top:10rem;
+  }
+}
 
 .form__input {
   display: block;

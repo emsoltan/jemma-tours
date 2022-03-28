@@ -1,6 +1,6 @@
 .section-contact {
-  margin:10rem auto;
-  padding: 0 3rem;
+  margin: 10rem auto;
+  padding: 5rem 3rem;
   background-color: var(--grey-light-1);
   border-radius: 3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -8,8 +8,15 @@
 }
 @media only screen and (max-width: 56.25em) {
   .section-contact {
-    padding: 8rem 0;
+    padding: 4rem 0;
+    width: 90%;
+    margin: 5rem auto;
   }
+  .contact__form {
+    width: 100%;
+  }
+  .section-contact .row {
+  padding: 0 1rem;
 }
 .contact {
   background-color: var(--grey-light-2);
@@ -17,20 +24,19 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
 .contact__form {
-  padding: 3rem 1rem;
+  padding: 0rem 1rem;
   margin: 0 auto;
   background-color: var(--grey-light-1);
 }
+
 @media only screen and (max-width: 75em) {
   .contact__form {
-    width: 75%;
+    width: 95%;
   }
+  
 }
-@media only screen and (max-width: 56.25em) {
-  .contact__form {
-    width: 100%;
-  }
 }
+
 .contact-form__input,
 .contact-form__textarea {
   font-size: 1.5rem;
