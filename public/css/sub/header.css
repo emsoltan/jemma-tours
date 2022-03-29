@@ -69,7 +69,7 @@
 
 @media (max-width: 37.5em) {
   .header {
-    margin: 4rem 0;
+    margin-bottom: 3rem;
   }
   .navbar {
     max-height: 12vh;
