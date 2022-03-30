@@ -35,7 +35,7 @@ app.use(helmet())
 csp.extend(app, {
     policy: {
         directives: {
-            'default-src': ['self'],
+            // 'default-src': ['self'],
             'style-src': ['self', 'unsafe-inline', 'https:'],
             'font-src': ['self', 'https://fonts.gstatic.com'],
             'script-src': [
