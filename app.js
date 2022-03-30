@@ -89,7 +89,7 @@ csp.extend(app, {
                 //'blob:',
                 // 'wss://<HEROKU-SUBDOMAIN>.herokuapp.com:<PORT>/',
                 //'https://*.stripe.com',
-                'https://*.mapbox.com',
+                // 'https://*.mapbox.com',
                 //'https://*.cloudflare.com/',
                 'https://bundle.js:*',
                 //'ws://localhost:*/',
