@@ -35,7 +35,7 @@ app.use(helmet())
 csp.extend(app, {
     policy: {
         directives: {
-            // 'default-src': ['self'],
+            'default-src': ['self'],
             'style-src': ['self', 'unsafe-inline', 'https:'],
             'font-src': ['self', 'https://fonts.gstatic.com'],
             'script-src': [
@@ -47,7 +47,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:8828',
-                // 'ws://localhost:56558/',
+                'ws://localhost:56558/',
             ],
             'worker-src': [
                 'self',
@@ -58,7 +58,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:*',
-                // 'ws://localhost:*/',
+                'ws://localhost:*/',
             ],
             'frame-src': [
                 'self',
@@ -69,7 +69,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:*',
-                // 'ws://localhost:*/',
+                'ws://localhost:*/',
             ],
             'img-src': [
                 'self',
@@ -80,20 +80,20 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:*',
-                // 'ws://localhost:*/',
+                'ws://localhost:*/',
             ],
-            // 'connect-src': [
-            //     'self',
-            //     'unsafe-inline',
-            //     'data:',
-            //     'blob:',
-            //     // 'wss://<HEROKU-SUBDOMAIN>.herokuapp.com:<PORT>/',
-            //     'https://*.stripe.com',
-            //     'https://*.mapbox.com',
-            //     'https://*.cloudflare.com/',
-            //     'https://bundle.js:*',
-            //     // 'ws://localhost:*/',
-            // ],
+            'connect-src': [
+                'self',
+                'unsafe-inline',
+                'data:',
+                'blob:',
+                'wss://<HEROKU-SUBDOMAIN>.herokuapp.com:<PORT>/',
+                'https://*.stripe.com',
+                'https://*.mapbox.com',
+                'https://*.cloudflare.com/',
+                'https://bundle.js:*',
+                'ws://localhost:*/',
+            ],
         },
     },
 });
