@@ -47,7 +47,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:8828',
-                'ws://localhost:56558/',
+                // 'ws://localhost:56558/',
             ],
             'worker-src': [
                 'self',
@@ -58,7 +58,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:*',
-                'ws://localhost:*/',
+                // 'ws://localhost:*/',
             ],
             'frame-src': [
                 'self',
@@ -69,7 +69,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:*',
-                'ws://localhost:*/',
+                // 'ws://localhost:*/',
             ],
             'img-src': [
                 'self',
@@ -80,7 +80,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:*',
-                'ws://localhost:*/',
+                // 'ws://localhost:*/',
             ],
             'connect-src': [
                 'self',
@@ -92,7 +92,7 @@ csp.extend(app, {
                 'https://*.mapbox.com',
                 'https://*.cloudflare.com/',
                 'https://bundle.js:*',
-                'ws://localhost:*/',
+                // 'ws://localhost:*/',
             ],
         },
     },
